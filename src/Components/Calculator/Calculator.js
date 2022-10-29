@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import ButtonComponent from '../ButtonComponent/ButtonComponent';
+import OperationComponent from '../OperationList/OperationComponent';
 import './style.css';
 
 const Calculator = () => {
@@ -15,6 +16,10 @@ const Calculator = () => {
         setNumber(previous);
     }
 
+    const calculateResult = () => {
+        setNumber("Este es el resultado")
+    }
+
     return (
         <section>
             <div className='app__Section'>
@@ -27,6 +32,8 @@ const Calculator = () => {
                             return <ButtonComponent number={el} key={index} numberClick={numberClick} />
                         })
                     }
+                    <OperationComponent numberClick={numberClick}/>
+                    <button className='btn__Number' onClick={calculateResult}>=</button>
                 </div>
             </div>
         </section>
