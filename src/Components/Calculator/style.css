@@ -1,0 +1,21 @@
+.app__Section{
+    width: 200px;
+    background-color: red;
+    margin: 5rem auto;
+}
+
+.app__Container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+} 
+
+.calculator__Display{
+    background: lightblue;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
