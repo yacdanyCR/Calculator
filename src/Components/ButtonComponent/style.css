@@ -3,3 +3,7 @@
     border-radius: 1rem;
     border: none;
 }
+
+.btn__Container{
+    margin: 2px;
+}

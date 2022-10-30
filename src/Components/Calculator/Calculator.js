@@ -4,20 +4,33 @@ import OperationComponent from '../OperationList/OperationComponent';
 import './style.css';
 
 const Calculator = () => {
-    const [num, setNumber] = useState("");
+    const [num, setNumber] = useState("0");
     const numbers = [];
+
     for (let index = 0; index < 10; index++) {
         numbers.push(index);
     }
 
     const numberClick = (e) => {
-        let previous = num;
-        previous = previous + e.target.value;
-        setNumber(previous);
+        switch (e.target.value) {
+            case "result": calculateResult(eval(num));
+                break;
+            case "reset": res();
+                break;
+            default:
+                let previous = num;
+                previous = previous + e.target.value;
+                setNumber(previous);
+                break;
+        }
     }
 
     const calculateResult = () => {
-        setNumber("Este es el resultado")
+        setNumber(eval(num))
+    }
+
+    const res = () => {
+        setNumber("");
     }
 
     return (
@@ -32,8 +45,7 @@ const Calculator = () => {
                             return <ButtonComponent number={el} key={index} numberClick={numberClick} />
                         })
                     }
-                    <OperationComponent numberClick={numberClick}/>
-                    <button className='btn__Number' onClick={calculateResult}>=</button>
+                    <OperationComponent numberClick={numberClick} />
                 </div>
             </div>
         </section>

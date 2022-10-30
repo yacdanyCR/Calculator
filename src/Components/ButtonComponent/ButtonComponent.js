@@ -8,7 +8,7 @@ const ButtonComponent = ({ number, numberClick }) => {
     }
 
     return (
-        <div>
+        <div className='btn__Container'>
             <button className='btn__Number' value={number} onClick={(e) => handleClick(e)} >{number}</button>
         </div>
     )

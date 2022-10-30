@@ -1,28 +1,33 @@
 .app__Section{
-    width: 200px;
-    background-color: red;
+    width: 250px;
+    background-image: linear-gradient(167.95deg, #FBFBFB 0%, rgba(251, 251, 251, 0.2) 100%);
     margin: 5rem auto;
+    border-radius: 18px;
 }
 
 .app__Container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1rem;
+   /*  gap: 1rem; */
     padding: 1rem;
 } 
 
 .calculator__Display{
-    background: lightblue;
+    font-size: 2rem;
+    padding: 3rem;
     width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 60px;
 }
 
 .btn__Number{
-    padding: 1rem;
+    padding: 20px;
     border-radius: 1rem;
+    cursor: pointer;
     border: none;
+    background-color: #F3F3F3;
+    color: #707070;
 }
