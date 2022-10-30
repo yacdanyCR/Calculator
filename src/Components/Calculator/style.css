@@ -9,17 +9,16 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-   /*  gap: 1rem; */
     padding: 1rem;
 } 
 
 .calculator__Display{
-    font-size: 2rem;
     padding: 3rem;
     width: auto;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
+    align-items: end;
     height: 60px;
 }
 
@@ -30,4 +29,12 @@
     border: none;
     background-color: #F3F3F3;
     color: #707070;
+}
+
+.previous__Operation{
+    font-size: 1rem;
+}
+
+.result__Operation{
+    font-size: 2rem;
 }
