@@ -1,7 +1,15 @@
 .btn__Number{
     padding: 1rem;
     border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
     border: none;
+}
+
+.btn__Reset{
+    width: 49px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn__Container{

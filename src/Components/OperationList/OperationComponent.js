@@ -24,7 +24,7 @@ const OperationComponent = ({ numberClick }) => {
                 <button className='btn__Number' value={"result"} onClick={(e) => handleClick(e)}>=</button>
             </div>
             <div className='btn__Container'>
-                <button className='btn__Number' value={"reset"} onClick={(e) => handleClick(e)}>CE</button>
+                <button className='btn__Number btn__Reset' value={"reset"} onClick={(e) => handleClick(e)}>CE</button>
             </div>
         </>
     )
